@@ -1,4 +1,5 @@
 import React from "react";
+import IconButton from "../template/iconButton";
 
 export default props => (
     <div role='form' className="todoForm">
@@ -8,9 +9,8 @@ export default props => (
             </div>
 
             <div className=" col-xs-12 col-sm-3 col-md-2">
-                <button className="btn btn-primary">
-                    <i className="fa fa-plus"></i>
-                </button>
+                <IconButton style='primary' icon='plus'
+                    onClick={props.handleAdd}></IconButton>
             </div>
 
     </div>
