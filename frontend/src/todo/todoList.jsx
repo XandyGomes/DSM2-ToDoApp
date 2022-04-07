@@ -7,10 +7,10 @@ export default props => {
         return list.map(todo => (
             <tr key={todo._id}>
                 <td>{todo.description}</td>
-                    <td>
-                        <IconButton style='danger' icon='trash-o'
-                            onClick={() => props.handleRemove(todo)}></IconButton>
-                    </td>
+                <td>
+                    <IconButton style='danger' icon='trash-o'
+                        onClick={() => props.handleRemove(todo)}></IconButton>
+                </td>
             </tr>
         ));
     }
